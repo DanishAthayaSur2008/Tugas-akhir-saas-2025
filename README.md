@@ -1,36 +1,156 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌦️ **WeatherWeb — Modern Weather App**
 
-## Getting Started
+### *Built with Next.js, Firebase, Open-Meteo & Tailwind CSS 4*
 
-First, run the development server:
+<p align="center">
+  <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js" />
+  <img src="https://img.shields.io/badge/TailwindCSS-4.0-06B6D4?style=for-the-badge&logo=tailwindcss" />
+  <img src="https://img.shields.io/badge/Firebase-Auth-FFCA28?style=for-the-badge&logo=firebase" />
+  <img src="https://img.shields.io/badge/OpenMeteo-API-blue?style=for-the-badge" />
+</p>
+
+<p align="center">
+  <b>WeatherWeb</b> adalah aplikasi cuaca modern yang menampilkan cuaca real-time dan prakiraan 7 hari berbasis Open-Meteo, lengkap dengan autentikasi Firebase dan dark mode yang tersimpan otomatis.
+</p>
+
+---
+
+## ✨ **Features**
+
+* 🔍 Pencarian cuaca (nama kota / koordinat lat,lon)
+* 🌎 Geocoding otomatis (OpenStreetMap)
+* 🌡️ Cuaca real-time (temperature, wind, weather code)
+* 📊 Grafik prakiraan 7 hari (Recharts)
+* 👤 Login lengkap (Email/Password + Google)
+* 📁 Firestore User Profile
+* 🌓 Dark & Light Theme (tersimpan di localStorage)
+* 🧊 Glassmorphism Auth Panel
+* 🎨 Full responsive UI
+* ⚡ Fast by Next.js App Router
+
+---
+
+## 📁 **Project Structure**
+
+```
+/app
+ ├── layout.tsx
+ ├── page.tsx
+/components
+ ├── Navbar.tsx
+ ├── AuthPanel.tsx
+ ├── ThemeToggle.tsx
+ ├── WeatherCard.tsx
+ ├── ForecastChart.tsx
+ ├── LoadingDots.tsx
+/lib
+ ├── firebase.ts
+ ├── users.ts
+/public
+ ├── google_logo.png
+/styles
+ ├── globals.css
+```
+
+---
+
+## 🚀 **Getting Started**
+
+### 1️⃣ Install dependencies
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+
+### 2️⃣ Jalankan development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka:
+👉 [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🔥 **Environment Variables**
 
-## Learn More
+Buat file:
 
-To learn more about Next.js, take a look at the following resources:
+```
+.env.local
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Isi dengan Firebase config:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=AIzaSyBmiixvqSKLq3M9GNqSr6mybq8dhjZpUjo
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=tugas-akhir-saas.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=tugas-akhir-saas
+NEXT_PUBLIC_FIREBASE_APP_ID=1:669210359644:web:ed5930ed8cb9e88d8cb399
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ **Tech Stack**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### **Frontend**
+
+* **Next.js 14 (App Router)**
+* **TypeScript**
+* **Tailwind CSS v4**
+* **Recharts**
+* **Framer Motion**
+
+### **Backend / Auth**
+
+* **Firebase Authentication**
+* **Firestore Database**
+
+### **Weather Data**
+
+* **Open-Meteo Forecast API**
+* **OpenStreetMap Nominatim Geocoding API**
+
+---
+
+## 📚 **Learn More**
+
+* 🔗 [https://nextjs.org/docs](https://nextjs.org/docs)
+* 🔗 [https://firebase.google.com/docs](https://firebase.google.com/docs)
+* 🔗 [https://open-meteo.com](https://open-meteo.com)
+* 🔗 [https://tailwindcss.com](https://tailwindcss.com)
+
+---
+
+## 🌍 **Deploy to Production**
+
+Paling mudah deploy via **Vercel**:
+
+👉 [https://vercel.com/new](https://vercel.com/new)
+
+Dokumentasi resmi:
+[https://nextjs.org/docs/app/building-your-application/deploying](https://nextjs.org/docs/app/building-your-application/deploying)
+
+---
+
+## ❤️ **Support & Contribution**
+
+Want to contribute?
+PRs & issues are always welcome!
+
+Feel free to fork this repo ⭐
+
+---
+
+## 📝 **License**
+
+This project is licensed under the **MIT License**.
+
+---
