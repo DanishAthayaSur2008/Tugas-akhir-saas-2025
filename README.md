@@ -23,7 +23,6 @@
 * 📊 Grafik prakiraan 7 hari (Recharts)
 * 👤 Login lengkap (Email/Password + Google)
 * 📁 Firestore User Profile
-* 🌓 Dark & Light Theme (tersimpan di localStorage)
 * 🧊 Glassmorphism Auth Panel
 * 🎨 Full responsive UI
 * ⚡ Fast by Next.js App Router
